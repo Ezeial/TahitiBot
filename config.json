@@ -1,0 +1,38 @@
+{
+    "token":"NjUzODY0OTY0NTY1NzYyMDY5.Xe9NMw.kQ34a6Mz12MYzeU88Z3Gl9k6tAw",
+    "prefix":"!",
+    "emojis": [
+        {
+            "name":"RocketLeague",
+            "id":"776946373089558568"
+        },
+        {
+            "name":"Smash",
+            "id":"776946370091024394"
+        },
+        {
+            "name":"ModernWarfare",
+            "id":"776946370308603955"
+        },
+        {
+            "name":"Apex",
+            "id":"776946367074926663"
+        },
+        {
+            "name":"Lol",
+            "id":"776946378629840926"
+        },
+        {
+            "name":"Valorant",
+            "id":"776946371273293844"
+        },
+        {
+            "name":"CSGO",
+            "id":"776946369389920327"
+        },
+        {
+            "name":"AmongUs",
+            "id": "776946366911610951"
+        }
+    ]
+}

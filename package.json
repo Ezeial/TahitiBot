@@ -1,0 +1,14 @@
+{
+  "name": "tahiti",
+  "version": "1.0.0",
+  "description": "discord bot for tahiti",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx nodemon index.js"
+  },
+  "author": "Ezio Giraldi",
+  "license": "MIT",
+  "dependencies": {
+    "eris": "^0.14.0"
+  }
+}
