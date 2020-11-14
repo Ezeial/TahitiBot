@@ -1,5 +1,5 @@
-const config = require('./config.json')
+require('dotenv').config()
 const Eris = require('eris')
-const bot = new Eris(config.token)
+const bot = new Eris(process.env.TOKEN)
 
 module.exports = bot

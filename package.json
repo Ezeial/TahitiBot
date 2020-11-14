@@ -9,6 +9,7 @@
   "author": "Ezio Giraldi",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "eris": "^0.14.0"
   }
 }
