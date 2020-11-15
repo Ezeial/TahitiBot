@@ -4,7 +4,8 @@
   "description": "discord bot for tahiti",
   "main": "index.js",
   "scripts": {
-    "test": "npx nodemon index.js"
+    "test": "npx nodemon index.js",
+    "start": "node index.js"
   },
   "author": "Ezio Giraldi",
   "license": "MIT",
