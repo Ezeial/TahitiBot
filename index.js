@@ -18,7 +18,7 @@ fs.readdirSync('./events/').forEach(file => {
 })
 
 bot.on('ready', () => {
-    console.log('rdy')
+    bot.emit('bindRoleEvent')
 })
 
 bot.connect();

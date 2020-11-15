@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "edit-json-file": "^1.5.0",
     "eris": "^0.14.0"
   }
 }

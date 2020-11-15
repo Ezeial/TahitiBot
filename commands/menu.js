@@ -1,20 +1,10 @@
 const bot = require('../bot')
 const config = require('../config.json')
-const ReactionHandler = require('../class/ReactionHandler')
+const editJsonFile = require("edit-json-file")
 
-const handleAddReaction = (guildID, emoji, member) => {
-    const roles = bot.guilds.find(guild => guild.id === guildID).roles
-    if (!roles.find(role => role.name === emoji.name)) return
-    const id = roles.find(role => role.name === emoji.name).id
-    member.addRole(id)
-}
-
-const handleRemoveReaction = (guildID, emoji, userID) => {
-    const roles = bot.guilds.find(guild => guild.id === guildID).roles
-    if (!roles.find(role => role.name === emoji.name)) return
-    const id = roles.find(role => role.name === emoji.name).id
-    bot.removeGuildMemberRole(guildID, userID, id)
-}
+const file = editJsonFile(`${__dirname}/../config.json`, {
+    autosave: true
+})
 
 module.exports = {
     name: 'menu',
@@ -30,11 +20,12 @@ ${config.emojis.reduce((acc, current, i) => {
 })}
 `) 
         // Reactions
+
         config.emojis.forEach(async emoji => await message.addReaction(`${emoji.name}:${emoji.id}`))
 
-        const reactionListener = new ReactionHandler(message)
-
-        reactionListener.on('add', handleAddReaction)
-        reactionListener.on('remove', handleRemoveReaction)
+        file.set('menuInfo', {
+            channelID: message.channel.id,
+            messageID: message.id
+        })
     }
 }
