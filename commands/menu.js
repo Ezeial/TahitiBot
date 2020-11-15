@@ -23,9 +23,9 @@ ${config.emojis.reduce((acc, current, i) => {
 
         config.emojis.forEach(async emoji => await message.addReaction(`${emoji.name}:${emoji.id}`))
 
-        file.set('menuInfo', {
-            channelID: message.channel.id,
-            messageID: message.id
-        })
+        // file.set('menuInfo', {
+        //     channelID: message.channel.id,
+        //     messageID: message.id
+        // })
     }
 }
