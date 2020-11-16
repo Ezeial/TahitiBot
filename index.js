@@ -19,7 +19,7 @@ fs.readdirSync('./events/').forEach(file => {
 
 bot.on('ready', () => {
     bot.emit('bindRoleEvent')
-    console.log('listening')
+    console.log('listening on tahiti server')
 })
 
 bot.connect();
